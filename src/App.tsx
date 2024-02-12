@@ -11,6 +11,7 @@ function App() {
   console.log({auth});
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(!!auth?.currentUser);
   const [init, setInit] = useState<boolean>(false);
+  
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if(user) {
