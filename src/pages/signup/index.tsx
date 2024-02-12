@@ -1,7 +1,11 @@
-export default function Signup() {
+import Header from "components/Header";
+import Signup from "components/Signup";
+
+export default function SignupPage() {
   return (
     <>
-      <div>Signup PAGE</div>
+      <Header />
+      <Signup />
     </>
   );
 }

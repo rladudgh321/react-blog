@@ -218,6 +218,7 @@ footer a:hover, footer a:focus {
 .profile__logout {
   font-size: 14px;
   color:gray;
+  cursor: pointer;
 }
 
 .profile__logout:focus, .profile__logout:hover {
@@ -398,4 +399,40 @@ input:checked + .carousel__slide-container .carousel__controls label {
 .form .form__btn--submit:hover,
 .form .form__btn--submit:focus {
   background-color: #1945a4;
+}
+
+/* login */
+.form--lg {
+  min-height: 70vh;
+  margin-top:10vh;
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__link {
+  margin-left: 10px;
+  text-decoration: none;
+  color:gray;
+}
+
+.form__link:focus, .form__link:hover {
+  color:blue;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999;
+  border: 5px solid blue;
+  border-radius: 50%;
+  animation: rotation 1s linear infinite
 }

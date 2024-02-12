@@ -1,7 +1,11 @@
-export default function Login() {
+import Header from "components/Header";
+import Login from "components/Login";
+
+export default function LoginPage() {
   return (
     <>
-      <div>Login PAGE</div>
+      <Header />
+      <Login />
     </>
   );
 }
